@@ -1,0 +1,8 @@
+================================================================================
+Linker Errors
+Generated: 2026-05-19T03:09:56.477Z
+Total Errors: 1
+================================================================================
+
+[LNK1168] (MSVC)
+cannot open C:\Users\ayode\LearnOpenGL\build\msvc\Debug\learnopengl.exe for writing [C:\Users\ayode\LearnOpenGL\build\msvc\learnopengl.vcxproj]
