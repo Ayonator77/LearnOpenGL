@@ -1,4 +1,5 @@
 #include "common.h"
+#include <iostream>
 
 static const char* vertSrc =
     "#version 330 core\n"
@@ -11,7 +12,7 @@ static const char* fragSrc =
     "#version 330 core\n"
     "out vec4 FragColor;\n"
     "void main(){\n"
-    "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+    "   FragColor = vec4(0.2f, 0.6f, 0.8f, 1.0f);\n"
     "}\0";
 
 
@@ -106,6 +107,10 @@ void exercise1a_1(){
 
     unsigned int shader = createShaderProgram(vertSrc, fragSrc);
     unsigned int shader2 = createShaderProgram(vertSrc, fragSrc_blue);
+
+    int nrAttributes;
+    glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+    std::cout << "Maximum nr of vertex attributes supported: " << nrAttributes << std::endl;    
     while (!glfwWindowShouldClose(window)) {
         processInput(window);
         glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
