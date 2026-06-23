@@ -34,5 +34,3 @@ If no id is passed, `src/main.cpp` uses `kDefaultExercise`.
 4. Put reusable OpenGL setup helpers in `src/common.*` only when multiple
    lessons need them.
 
-Assimp is already included through vcpkg and linked in CMake for the model
-loading chapters.
