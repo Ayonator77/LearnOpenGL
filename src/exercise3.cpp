@@ -1,10 +1,16 @@
-#define STB_IMAGE_IMPLEMENTATION
-
-#include <stb_image.h>
+#include "exercise.h"
 #include "common.h"
-#include "excersise3.h"
+#include "shader.h"
+#include <glm/glm.hpp>
 
-SceneData scene_3(){
+namespace {
+struct TextureScene {
+    unsigned int VAO, VBO, EBO;
+    Shader shader;
+    unsigned int texture;
+};
+
+TextureScene scene_3(){
     float vertices[] = {
         //position           //color            //texture coords
          0.5f,  0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  1.0f, 1.0f, // top right
@@ -40,32 +46,13 @@ SceneData scene_3(){
     unsigned int texture = loadTexture("assets/textures/container.jpg");
     return {VAO, VBO, EBO, shader, texture};
 }
-
-unsigned int loadTexture(const char* path){
-    int width, height, nrChannels;
-    unsigned char* data = stbi_load(path, &width, &height, &nrChannels, 0);
-
-    if(data){
-        unsigned int texture;
-        glGenTextures(1, &texture);
-
-        glBindTexture(GL_TEXTURE_2D, texture);
-
-        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-        glGenerateMipmap(GL_TEXTURE_2D);
-        stbi_image_free(data);
-        return texture;
-    } else {
-        std::cout << "Failed to load texture" << std::endl;
-        return 0;
-    }
 }
 
 void exercise3() {
     GLFWwindow* window = createWindow(800, 600, "Exercise 3");
     if(!window) return;
 
-    SceneData scene = scene_3();
+    TextureScene scene = scene_3();
 
     while(!glfwWindowShouldClose(window)){
         processInput(window);
@@ -73,7 +60,8 @@ void exercise3() {
         glClear(GL_COLOR_BUFFER_BIT);
 
         scene.shader.use();
-        //scene.shader.setVec4("transVec", 0.0f, 0.0f, 0.0f, 0.0f);
+        scene.shader.setMat4("transform", glm::mat4(1.0f));
+        glBindTexture(GL_TEXTURE_2D, scene.texture);
         glBindVertexArray(scene.VAO);
         glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, scene.EBO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
@@ -85,5 +73,6 @@ void exercise3() {
     glDeleteVertexArrays(1, &scene.VAO);
     glDeleteBuffers(1, &scene.VBO);
     glDeleteBuffers(1, &scene.EBO);
+    glDeleteTextures(1, &scene.texture);
     glfwTerminate();
 }

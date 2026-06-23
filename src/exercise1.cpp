@@ -1,3 +1,4 @@
+#include "exercise.h"
 #include "common.h"
 
 static const char* vertSrc =

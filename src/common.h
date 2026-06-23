@@ -10,4 +10,7 @@ GLFWwindow* createWindow(int width, int height, const char* title);
 // Prints errors to stdout. Caller owns the returned program ID.
 unsigned int createShaderProgram(const char* vertSrc, const char* fragSrc);
 
+// Loads an image file into an OpenGL 2D texture. Caller owns the returned texture ID.
+unsigned int loadTexture(const char* path);
+
 void processInput(GLFWwindow* window);

@@ -16,6 +16,7 @@ find_package(glfw3 CONFIG REQUIRED)
 find_package(glad CONFIG REQUIRED)
 find_package(glm CONFIG REQUIRED)
 find_package(Stb REQUIRED)
+find_package(assimp CONFIG REQUIRED)
 
 # -----------------------------
 # Sources
@@ -36,6 +37,7 @@ target_link_libraries(learnopengl PRIVATE
   glfw
   glad::glad
   glm::glm
+  assimp::assimp
   opengl32
 )
 

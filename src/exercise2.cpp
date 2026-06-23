@@ -1,9 +1,14 @@
-#include "exercise2.h"
+#include "exercise.h"
 #include "common.h"
 #include "shader.h"
 
+namespace {
+struct ShaderScene {
+    unsigned int VAO, VBO;
+    Shader shader;
+};
 
-SceneData scene_1(){
+ShaderScene scene_1(){
     float vertices[] = {
         -0.5f, -0.5f, 0.0f,
          0.5f, -0.5f, 0.0f,
@@ -25,7 +30,7 @@ SceneData scene_1(){
 }
 
 
-SceneData scene_2(){
+ShaderScene scene_2(){
     float vertices[] = {
         //position         //color
         0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f, // bottom right
@@ -54,12 +59,13 @@ SceneData scene_2(){
     Shader shader("assets/shaders/vert_src.vert", "assets/shaders/frag_src.frag");
     return {VAO, VBO, shader};
 }
+}
 
 void exercise2() {
     GLFWwindow* window = createWindow(800, 600, "Exercise 2");
     if(!window) return;
 
-    SceneData scene = scene_2();
+    ShaderScene scene = scene_2();
     //scene.shader.use();
 
     while(!glfwWindowShouldClose(window)){
