@@ -1,0 +1,50 @@
+[
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\common.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\common.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/common.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/common.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\exercise1.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\exercise1.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/exercise1.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/exercise1.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\exercise1a.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\exercise1a.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/exercise1a.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/exercise1a.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\exercise2.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\exercise2.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/exercise2.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/exercise2.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\exercise3.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\exercise3.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/exercise3.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/exercise3.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\exercise4.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\exercise4.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/exercise4.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/exercise4.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\main.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\main.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/main.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/ayode/LearnOpenGL/build/ninja",
+  "command": "\"D:\\Visual Studio\\VC\\Tools\\MSVC\\14.51.36231\\bin\\Hostx64\\x64\\cl.exe\"  /nologo /TP -DGLFW_DLL -IC:\\Users\\ayode\\LearnOpenGL\\src -external:IC:\\Users\\ayode\\LearnOpenGL\\build\\ninja\\vcpkg_installed\\x64-windows\\include -external:W0 /DWIN32 /D_WINDOWS /EHsc /Zi /Ob0 /Od /RTC1 -std:c++17 -MDd /W4 /permissive- /FS /FoCMakeFiles\\learnopengl.dir\\src\\shader.cpp.obj /FdCMakeFiles\\learnopengl.dir\\ /FS -c C:\\Users\\ayode\\LearnOpenGL\\src\\shader.cpp",
+  "file": "C:/Users/ayode/LearnOpenGL/src/shader.cpp",
+  "output": "C:/Users/ayode/LearnOpenGL/build/ninja/CMakeFiles/learnopengl.dir/src/shader.cpp.obj"
+}
+]
