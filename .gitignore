@@ -1,3 +1,8 @@
 build/
 .vscode/
+.cache/
+compile_commands.json
+learnopengl.bat
 CMakeLists.txt
+CMakePresets.json
+vcpkg.json

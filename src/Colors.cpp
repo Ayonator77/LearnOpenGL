@@ -18,7 +18,7 @@ float g_lastX = 400.0f;
 float g_lastY = 300.0f;
 bool g_firstMouse = true;
 
-void mouse_callback(GLFWwindow* window, double xposIn, double yposIn){
+void mouse_callback(GLFWwindow* /*window*/, double xposIn, double yposIn){
     float xpos = static_cast<float>(xposIn);
     float ypos = static_cast<float>(yposIn);
 
@@ -38,7 +38,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn){
     
 }
 
-void scroll_callback(GLFWwindow* window, double xoffset, double yoffset){
+void scroll_callback(GLFWwindow* /*window*/, double /*xoffset*/, double yoffset){
     if(g_camera)
         g_camera->ProcessMouseScroll(static_cast<float>(yoffset));
 }
