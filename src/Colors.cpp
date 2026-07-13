@@ -166,6 +166,16 @@ void lightExercise() {
         scene.colorShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         scene.colorShader.setVec3("lightPos", 1.2f, 1.0f, 2.0f);
 
+        //view/projection transformations
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), 800.0f / 600.0f, 0.1f, 100.0f);
+        glm::mat4 view = camera.GetViewMatrix();
+        scene.colorShader.setMat4("projection", projection);
+        scene.colorShader.setMat4("view", view);
+
+        //world transformation
+        glm::mat4 model = glm::mat4(1.0f);
+        scene.colorShader.setMat4("model", model);
+
     }
 
 }
